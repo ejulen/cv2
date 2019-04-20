@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+html(lang=cv.locale)
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        meta(name="description", content=cv.description)
+        link(rel="stylesheet", href="/main.css")
+        title= cv.title
+    body
+        main
+            nav.menu
+                ol.menu__items
+                    li.menu-item
+                        != icon('download', {class: 'menu-item__icon'})
+                        a.menu-item__title(href=`${cv.urlPrefix}/cv.pdf`)= cv.download
+                    each locale, localeName in cv.locales
+                        if localeName !== cv.locale
+                            li.menu-item
+                                != icon('flag', {class: 'menu-item__icon'})
+                                a.menu-item__title(href=locale.link)= locale.name
+            h1= cv.name
+            p.info
+                != icon('mail', {class: 'info__icon'})
+                a.info__description(href=`mailto:${cv.email}`)= cv.email
+            p.info
+                != icon('smartphone', {class: 'info__icon'})
+                a.info__description(href=`tel:${cv.phoneNumber}`)= cv.phoneNumber
+            p.info
+                != icon('map-pin', {class: 'info__icon'})
+                span.info__description= cv.location
+            section
+                h2.section= cv.experience.title
+                each item in cv.experience.items
+                    .item
+                        h3.item__title= item.title
+                        p.item__extra #{formatDate(item.start, 'MMM YYYY')} - #{item.end ? formatDate(item.end, 'MMM YYYY') : cv.now}
+                        p.item__description= item.description
+            section
+                h2.section= cv.education.title
+                each item in cv.education.items
+                    .item
+                        h3.item__title= item.title
+                        p.item__extra #{formatDate(item.start, 'YYYY')} - #{item.end ? formatDate(item.end, 'YYYY') : cv.now}
+                        p.item__description= item.location

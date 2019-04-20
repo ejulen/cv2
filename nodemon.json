@@ -1,0 +1,6 @@
+{
+    "ext": "js,pug,css",
+    "watch": [
+        "src"
+    ]
+}

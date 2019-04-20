@@ -1,0 +1,8 @@
+[Settings]
+[build]
+    publish = "build"
+    command = "npm run build:all"
+[[headers]]
+    for = "/*"
+    [headers.values]
+        Link = "</main.css>; rel=preload; as=style"
