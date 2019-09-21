@@ -28,6 +28,10 @@ async function renderFile(templatePath, locale, outputPath) {
     console.log(`Built ${outputPath}...`);
 }
 
-fs.copy(assetsPath, buildPath, {errorOnExist: false});
-renderFile(cvTemplatePath, 'en', 'index.html');
-renderFile(cvTemplatePath, 'sv', 'sv/index.html');
+async function main() {
+    await fs.copy(assetsPath, buildPath, {errorOnExist: false});
+    await renderFile(cvTemplatePath, 'en', 'index.html');
+    await renderFile(cvTemplatePath, 'sv', 'sv/index.html');
+}
+
+main().catch(console.error);
