@@ -54,8 +54,16 @@ const cv = {
             sv: 'Erfarenhet',
         },
         items: [{
+            title: 'Lägenhetsbyte',
+            start: new Date('2019-09'),
+            description$: {
+                en: `Full-stack development using Node.js, Vue, and various AWS services, including Lambda, S3 and DynamoDB.`,
+                sv: `Full-stackutveckling med hjälp av Node.js, Vue och olika AWS-tjänster, till exempel Lambda, S3 och DynamoDB.`,
+            }
+        }, {
             title: 'Pingdom',
             start: new Date('2017-05'),
+            end: new Date('2019-09'),
             description$: {
                 en: `Full-stack development with a focus on Node.js, Python, PHP and Go in different parts of the Pingdom product.`,
                 sv: `Full-stackutveckling med fokus på Node.js, Python, PHP och Go i olika delar av Pingdoms produkt.`,
@@ -74,7 +82,7 @@ const cv = {
             end: new Date('2016-04'),
             description$: {
                 en: `Mainly web development in Java and ASP.NET.`,
-                sv: `Mestadels webbutveckling i Java och ASP.NET.`,
+                sv: `Huvudsakligen webbutveckling i Java och ASP.NET.`,
             }
         }],
     },
