@@ -33,7 +33,7 @@ html(lang=cv.locale)
                 h2.section= cv.experience.title
                 each item in cv.experience.items
                     .item
-                        h3.item__title= item.title
+                        h3.item__title #{item.role}, #{item.employer}
                         p.item__extra #{formatDate(item.start, 'MMM YYYY')} - #{item.end ? formatDate(item.end, 'MMM YYYY') : cv.now}
                         p.item__description= item.description
             section

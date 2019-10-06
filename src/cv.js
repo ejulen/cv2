@@ -54,14 +54,22 @@ const cv = {
             sv: 'Erfarenhet',
         },
         items: [{
-            title: 'Lägenhetsbyte',
+            employer: 'Lägenhetsbyte',
+            role$: {
+                en: 'Full-stack developer',
+                sv: 'Full-stackutvecklare',
+            },
             start: new Date('2019-09'),
             description$: {
                 en: `Full-stack development using Node.js, Vue, and various AWS services, including Lambda, S3 and DynamoDB.`,
                 sv: `Full-stackutveckling med hjälp av Node.js, Vue och olika AWS-tjänster, till exempel Lambda, S3 och DynamoDB.`,
             }
         }, {
-            title: 'Pingdom',
+            employer: 'Pingdom',
+            role$: {
+                en: 'Full-stack developer',
+                sv: 'Full-stackutvecklare',
+            },
             start: new Date('2017-05'),
             end: new Date('2019-09'),
             description$: {
@@ -69,7 +77,11 @@ const cv = {
                 sv: `Full-stackutveckling med fokus på Node.js, Python, PHP och Go i olika delar av Pingdoms produkt.`,
             },
         }, {
-            title: 'Rabalder Media',
+            employer: 'Rabalder Media',
+            role$: {
+                en: 'Front-end developer',
+                sv: 'Front-endutvecklare',
+            },
             start: new Date('2016-04'),
             end: new Date('2017-05'),
             description$: {
@@ -77,7 +89,11 @@ const cv = {
                 sv: `Webbutveckling med moderna verktyg och språk. Mestadels front-end (hostad på bland annat Netlify), men även en hel del back-end på egen infrastruktur samt på PaaS-system som Heroku.`,
             },
         }, {
-            title: 'CGI',
+            employer: 'CGI',
+            role$: {
+                en: 'Developer',
+                sv: 'Utvecklare',
+            },
             start: new Date('2015-11'),
             end: new Date('2016-04'),
             description$: {
