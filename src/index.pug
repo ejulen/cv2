@@ -30,16 +30,19 @@ html(lang=cv.locale)
                 != icon('map-pin', {class: 'info__icon'})
                 span.info__description= cv.location
             section
-                h2.section= cv.experience.title
+                h2.section__title= cv.experience.title
                 each item in cv.experience.items
-                    .item
-                        h3.item__title #{item.role}, #{item.employer}
-                        p.item__extra #{formatDate(item.start, 'MMM YYYY')} - #{item.end ? formatDate(item.end, 'MMM YYYY') : cv.now}
-                        p.item__description= item.description
+                    .item__date #{formatDate(item.start, 'MMM YYYY')} - #{item.end ? formatDate(item.end, 'MMM YYYY') : cv.now}
+                    .item__content
+                        h3.item__title= item.employer
+                        p.item__subtitle= item.role
+                        ul.item__bullet-points
+                            each bulletPoint in item.bulletPoints
+                                li.item__bullet-point= bulletPoint
             section
-                h2.section= cv.education.title
+                h2.section__title= cv.education.title
                 each item in cv.education.items
-                    .item
+                    .item__date #{formatDate(item.start, 'YYYY')} - #{item.end ? formatDate(item.end, 'YYYY') : cv.now}
+                    .item__content
                         h3.item__title= item.title
-                        p.item__extra #{formatDate(item.start, 'YYYY')} - #{item.end ? formatDate(item.end, 'YYYY') : cv.now}
-                        p.item__description= item.location
+                        p.item__subtitle= item.location
