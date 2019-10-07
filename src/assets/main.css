@@ -104,7 +104,7 @@ a:hover {
   margin-bottom: 10px;
 }
 
-@media all, (min-width: 700px) {
+@media print, (min-width: 700px) {
   section {
     display: grid;
     grid-template-columns: 130px auto;
