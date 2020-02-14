@@ -124,3 +124,9 @@ a:hover {
     grid-column: 2;
   }
 }
+
+@media print {
+  #experience div:nth-child(n+10) {
+    display: none;
+  }
+}
