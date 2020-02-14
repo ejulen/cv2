@@ -55,27 +55,45 @@ const cv = {
     },
     items: [
       {
+        employer: "Westermo",
+        role: "Software Engineer",
+        start: new Date("2020-02-03"),
+        bulletPoints$: {
+          en: [
+            "Developed and maintained the internal testing framework written in Python and Go",
+            "Researched and experimented with running said framework in a Kubernetes cluster",
+            "Helped with developing modern web applications using Node.js and Vue"
+          ],
+          sv: [
+            "Utvecklade och underhöll det interna testramverket skrivet i Python och Go",
+            "Undersökte och experimenterade med att köra ovan nämnda ramverk i ett Kubernetes-kluster",
+            "Hjälpte till att utveckla moderna webbapplikationer med Node.js och Vue"
+          ]
+        }
+      },
+      {
         employer: "Lägenhetsbyte",
         role$: {
           en: "Full-stack developer",
           sv: "Full-stackutvecklare"
         },
         start: new Date("2019-09"),
+        end: new Date("2020-01-17"),
         description$: {
           en: `Full-stack development using Node.js, Vue, and various AWS services, including Lambda, S3 and DynamoDB.`,
           sv: `Full-stackutveckling med hjälp av Node.js, Vue och olika AWS-tjänster, till exempel Lambda, S3 och DynamoDB.`
         },
         bulletPoints$: {
-            en: [
-                'Full-stack development using mainly Node.js and Vue',
-                'Developed using CQRS and event sourcing principles',
-                'Used various AWS services such as Lambda, S3, DynamoDB and Cognito'
-            ],
-            sv: [
-                'Full-stackutveckling med fokus på Node.js och Vue',
-                'Utvecklade enligt CQRS- och event sourcing-principer',
-                'Använde diverse AWS-tjänster så som Lambda, S3, DynamoDB och Cognito'
-            ]
+          en: [
+            "Full-stack development using mainly Node.js and Vue",
+            "Developed using CQRS and event sourcing principles",
+            "Used various AWS services such as Lambda, S3, DynamoDB and Cognito"
+          ],
+          sv: [
+            "Full-stackutveckling med fokus på Node.js och Vue",
+            "Utvecklade enligt CQRS- och event sourcing-principer",
+            "Använde diverse AWS-tjänster så som Lambda, S3, DynamoDB och Cognito"
+          ]
         }
       },
       {
