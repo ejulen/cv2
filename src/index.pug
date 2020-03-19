@@ -33,7 +33,7 @@ html(lang=cv.locale)
             p.info
                 != icon('map-pin', {class: 'info__icon'})
                 span.info__description= cv.location
-            section#experience
+            section
                 h2.section__title= cv.experience.title
                 each item in cv.experience.items
                     .item__date #{formatDate(item.start, 'MMM YYYY')} - #{item.end ? formatDate(item.end, 'MMM YYYY') : cv.now}
