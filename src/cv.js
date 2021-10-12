@@ -55,9 +55,49 @@ const cv = {
     },
     items: [
       {
+        employer: "Pingdom",
+        role$: {
+          en: "Fullstack developer",
+          sv: "Fullstack-utvecklare",
+        },
+        start: new Date("2020-12-01"),
+        bulletPoints$: {
+          en: [
+            "Developed and maintained backend services written in PHP, Go, Python, Node.js and C, and frontend systems written in Mithril and React",
+            "Made improvements to internal tooling used by the majority of internal services and by all developers",
+          ],
+          sv: [
+            "Utvecklade och underhöll backend-tjänster skrivna i PHP, Go, Python, Node.js och C, och frontend-system skrivna i Mithril och React",
+            "Förbättrade interna verktyg som användes av majoriteten av interna system och av alla utvecklare",
+          ]
+        }
+      },
+      {
+        employer: "Qasa",
+        role$: {
+          en: "Front-end developer",
+          sv: "Front-endutvecklare"
+        },
+        start: new Date("2020-07-01"),
+        end: new Date("2020-12-01"),
+        bulletPoints$: {
+          en: [
+            "Wrote React-based views in the Qasa application",
+            "Worked on a GraphQL API written in Ruby on Rails",
+            "Developed and maintained internal tooling written in Node.js",
+          ],
+          sv: [
+            "Skrev React-baserade vyer i Qasa-applikationen",
+            "Jobbade på ett GraphQL-API skrivet i Ruby on Rails",
+            "Utvecklade och underhöll interna verktyg skrivna i Node.js"
+          ]
+        }
+      },
+      {
         employer: "Westermo",
         role: "Software Engineer",
         start: new Date("2020-02-03"),
+        end: new Date("2020-07-01"),
         bulletPoints$: {
           en: [
             "Developed and maintained the internal testing framework written in Python and Go",
@@ -74,8 +114,8 @@ const cv = {
       {
         employer: "Lägenhetsbyte",
         role$: {
-          en: "Full-stack developer",
-          sv: "Full-stackutvecklare"
+          en: "Fullstack developer",
+          sv: "Fullstack-utvecklare"
         },
         start: new Date("2019-09"),
         end: new Date("2020-01-17"),
@@ -95,8 +135,8 @@ const cv = {
       {
         employer: "Pingdom",
         role$: {
-          en: "Full-stack developer",
-          sv: "Full-stackutvecklare"
+          en: "Fullstack developer",
+          sv: "Fullstack-utvecklare"
         },
         start: new Date("2017-05"),
         end: new Date("2019-09"),
@@ -116,8 +156,8 @@ const cv = {
       {
         employer: "Rabalder Media",
         role$: {
-          en: "Front-end developer",
-          sv: "Front-endutvecklare"
+          en: "Frontend developer",
+          sv: "Frontend-utvecklare"
         },
         start: new Date("2016-04"),
         end: new Date("2017-05"),
