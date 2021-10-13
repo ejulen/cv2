@@ -1,7 +1,7 @@
 [Settings]
 [build]
     publish = "build"
-    command = "npm run build:all"
+    command = "npm run build"
 [[headers]]
     for = "/*"
     [headers.values]

@@ -15,9 +15,6 @@ html(lang=cv.locale)
         main
             nav.menu
                 ol.menu__items
-                    li.menu-item
-                        != icon('download', {class: 'menu-item__icon'})
-                        a.menu-item__title(href=`${cv.urlPrefix}/cv.pdf`)= cv.download
                     each locale, localeName in cv.locales
                         if localeName !== cv.locale
                             li.menu-item
