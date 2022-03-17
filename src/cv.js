@@ -55,12 +55,26 @@ const cv = {
     },
     items: [
       {
+        employer: "Joint Academy",
+        role: "Backend Engineer",
+        start: new Date("2021-11-22"),
+        bulletPoints$: {
+          en: [
+            "Developed and maintained backend systems written mainly in Ruby on Rails",
+          ],
+          sv: [
+            "Utvecklade och uppdaterade backendsystem skrivna i huvudsakligen Ruby on Rails",
+          ]
+        }
+      },
+      {
         employer: "Pingdom",
         role$: {
           en: "Fullstack developer",
           sv: "Fullstack-utvecklare",
         },
         start: new Date("2020-12-01"),
+        end: new Date("2021-11-22"),
         bulletPoints$: {
           en: [
             "Developed and maintained backend services written in PHP, Go, Python, Node.js and C, and frontend systems written in Mithril and React",
