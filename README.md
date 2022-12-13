@@ -6,7 +6,7 @@ Run `npm install --development`, then `npm run dev`. An auto-reloading browser w
 
 ## Build for production
 
-Run `npm install --production`, then `npm run build:all`. A directory called `build` will be created containing the built site.
+Run `npm install --production`, then `npm run build`. A directory called `build` will be created containing the built site.
 
 ## Changing information within the CV
 
