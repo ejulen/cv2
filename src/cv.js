@@ -55,9 +55,25 @@ const cv = {
     },
     items: [
       {
+        employer: "Frilans Finans",
+        role: "Backend Engineer",
+        start: new Date("2022-04-27"),
+        bulletPoints$: {
+          en: [
+            "Developed and maintained backend systems written in PHP and Go",
+            "Focused on security and contract testing",
+          ],
+          sv: [
+            "Utvecklade och underhöll backendsystem skrivna i PHP och Go",
+            "Fokuserade på säkerhet och kontrakttestning",
+          ],
+        },
+      },
+      {
         employer: "Joint Academy",
         role: "Backend Engineer",
         start: new Date("2021-11-22"),
+        end: new Date("2022-04-27"),
         bulletPoints$: {
           en: [
             "Developed and maintained backend systems written mainly in Ruby on Rails",
