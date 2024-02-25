@@ -60,12 +60,12 @@ const cv = {
         start: new Date("2022-04-27"),
         bulletPoints$: {
           en: [
-            "Developed and maintained backend systems written in PHP and Go",
-            "Focused on security and contract testing",
+            "Development and maintaining of backend systems written in PHP and Go",
+            "Focus on security and contract testing",
           ],
           sv: [
-            "Utvecklade och underhöll backendsystem skrivna i PHP och Go",
-            "Fokuserade på säkerhet och kontrakttestning",
+            "Utveckling och underhållning av backendsystem skrivna i PHP och Go",
+            "Fokus på säkerhet och kontrakttestning",
           ],
         },
       },
