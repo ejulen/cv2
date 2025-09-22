@@ -55,17 +55,35 @@ const cv = {
     },
     items: [
       {
+        employer: "Paligo",
+        role: "Engineer",
+        start: new Date("2024-06-01"),
+        bulletPoints$: {
+          en: [
+            "Development and maintenance of backend systems written in PHP",
+            "Modernizing legacy systems",
+            "Frontend development in jQuery and Vue",
+          ],
+          sv: [
+            "Utveckling och underhåll av backendsystem skrivna i PHP",
+            "Modernisering av legacy-system",
+            "Frontend-utveckling i jQuery och Vue",
+          ],
+        },
+      },
+      {
         employer: "Frilans Finans",
         role: "Backend Engineer",
         start: new Date("2022-04-27"),
+        end: new Date("2024-05-31"),
         bulletPoints$: {
           en: [
-            "Development and maintaining of backend systems written in PHP and Go",
-            "Focus on security and contract testing",
+            "Developed and maintained backend systems written in PHP and Go",
+            "Focused on security and contract testing",
           ],
           sv: [
-            "Utveckling och underhållning av backendsystem skrivna i PHP och Go",
-            "Fokus på säkerhet och kontrakttestning",
+            "Utvecklade och underhöll backendsystem skrivna i PHP och Go",
+            "Fokuserade på säkerhet och kontrakttestning",
           ],
         },
       },
