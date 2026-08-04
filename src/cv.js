@@ -61,13 +61,13 @@ const cv = {
         bulletPoints$: {
           en: [
             "Development and maintenance of backend systems written in PHP",
-            "Modernizing legacy systems",
-            "Frontend development in jQuery and Vue",
+            "Modernizing legacy systems, from CodeIgniter to Laravel",
+            "Frontend development in Vue and jQuery",
           ],
           sv: [
             "Utveckling och underhåll av backendsystem skrivna i PHP",
-            "Modernisering av legacy-system",
-            "Frontend-utveckling i jQuery och Vue",
+            "Modernisering av legacy-system, från CodeIgniter till Laravel",
+            "Frontend-utveckling i Vue och jQuery",
           ],
         },
       },
