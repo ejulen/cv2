@@ -251,7 +251,7 @@ const cv = {
     items: [
       {
         title$: {
-          en: "Bachelor of Science in Computer Engineering",
+          en: "Bachelor of Science in Software Engineering",
           sv: "Kandidatexamen i programvaruteknik"
         },
         start: new Date("2012"),
